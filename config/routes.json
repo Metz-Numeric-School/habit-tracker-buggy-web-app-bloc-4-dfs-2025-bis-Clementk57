@@ -6,6 +6,11 @@
     },
     {
         "path": "/login",
+        "controller": "App\\Controller\\Web\\RegisterController",
+        "action": "index"
+    },
+    {
+        "path": "/login",
         "controller": "App\\Controller\\SecurityController",
         "action": "login"
     },
