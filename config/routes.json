@@ -72,6 +72,10 @@
         "path": "/api/habits",
         "controller": "App\\Controller\\Api\\HabitsController",
         "action": "index"
+    },   {
+        "path": "/user/tickets",
+        "controller": "App\\Controller\\Member\\TicketsController",
+        "action": "index"
     },
     {
         "path": "/habit/toggle",

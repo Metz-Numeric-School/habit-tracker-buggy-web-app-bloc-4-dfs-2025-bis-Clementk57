@@ -138,4 +138,6 @@ composer install --no-dev --optimize-autoloader**
 **J'ai rencontrer beacoup d'erreur :**
 ![1759317935108](image/DEPLOY/1759317935108.png)![1759320803725](image/DEPLOY/1759320803725.png)
 
+![1759321473229](image/DEPLOY/1759321473229.png)
+
 Que cela soit dans routes que j'ai modifier dans le fichier routes.json qui ce trouve dans le dossier config

@@ -14,3 +14,14 @@ répondre au question dans le .md QUESTIONS
 > Probleme avec les dependance
 
 Deploiment sur AAPPANEL
+
+📚 Documentation
+
+deploy ° Question
+
+🐛 Bug Fixes"
+fix des routes 
+
+🚀 Features"
+fixe des faille admin
+et explication des faille XSS
