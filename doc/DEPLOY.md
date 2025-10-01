@@ -81,6 +81,20 @@ puis on va dans l'onget website et on crée un site en mettant l'ip du server
 la db n'est pas affilier met pour crée une db on peut la crée sur appanel**
 ![1759308912524](image/DEPLOY/1759308912524.png)
 **password : bnffrwrSBcidRnH8
+
+ON peut ce rentre sur phmyadmin :
+![1759311833980](image/DEPLOY/1759311833980.png)
+
+Rentrer les information
+username :habit_tracker
+password :bnffrwrSBcidRnH8
+
+puis on peut exécuter le script qu'on dans le projet :
+database.sql pour crée les tables
+demo_data.sql : pour inserer les donnes dans les tables 
+
+![1759311809798](image/DEPLOY/1759311809798.png)
+
 on le met dans le .env et le projet et le website on peut le consulter :**
 ![1759309041998](image/DEPLOY/1759309041998.png)
 
