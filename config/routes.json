@@ -6,10 +6,9 @@
     },
     {
         "path": "/login",
-        "controller": "App\\Controller\\Web\\RegisterController",
-        "action": "index"
-    },
-    {
+        "controller": "App\\Controller\\SecurityController",
+        "action": "login"
+    },{
         "path": "/login",
         "controller": "App\\Controller\\SecurityController",
         "action": "login"
@@ -60,5 +59,23 @@
         "path": "/api/habits",
         "controller": "App\\Controller\\Api\\HabitsController",
         "action": "index"
-    }
+    },{
+        "path": "/api/habits",
+        "controller": "App\\Controller\\Api\\HabitsController",
+        "action": "index"
+    },{
+        "path": "/api/habits",
+        "controller": "App\\Controller\\Api\\HabitsController",
+        "action": "index"
+    },
+    {
+        "path": "/api/habits",
+        "controller": "App\\Controller\\Api\\HabitsController",
+        "action": "index"
+    },
+    {
+        "path": "/habit/toggle",
+        "controller": "App\\Controller\\Member\\HabitsController",
+        "action": "toggle"
+    },{"path":"/login","controller":"App\\Controller\\SecurityController","action":"login"},{"path":"/login","controller":"App\\Controller\\SecurityController","action":"login"}
 ]

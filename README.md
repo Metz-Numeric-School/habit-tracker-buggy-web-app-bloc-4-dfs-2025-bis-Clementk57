@@ -29,6 +29,41 @@ Les objectifs sont les suivants :
 ### Création de la base de données
 
 ```
+
+<?php
+
+require 'vendor/autoload.php';
+require 'config/bootstrap.php';
+
+use Mns\Buggy\Core\MySqlConnector;
+
+$pdo = MySqlConnector::getServerConnection();
+
+// Chemin absolu vers le fichier SQL
+$sqlFile = realpath(__DIR__ . '/../database.sql');
+
+if (!$sqlFile || !file_exists($sqlFile)) {
+    die("Fichier SQL introuvable !");
+}
+
+// Lit le contenu du fichier
+$sql = file_get_contents($sqlFile);
+
+try {
+    // Si le fichier contient plusieurs instructions séparées par ;
+    $statements = array_filter(array_map('trim', explode(';', $sql)));
+
+    foreach ($statements as $statement) {
+        if ($statement) {
+            $pdo->exec($statement);
+        }
+    }
+
+    echo "Base et tables créées avec succès !\n";
+} catch (\PDOException $e) {
+    echo "Erreur lors de l'exécution du script SQL : " . $e->getMessage() . "\n";
+}
+
 php bin/create-database
 ```
 
@@ -51,3 +86,21 @@ Le code doit impérativement être push sur le repo GitHub Classroom qui vous a 
 **!!! ATTENTION : la partie 2 ne sera pas évaluée si ce n'est pas le cas !!!**
 
 # BONNE CHANCE
+
+DB
+
+Rentrer les information
+username :habit_tracker
+password :bnffrwrSBcidRnH8
+
+
+
+aapanel
+
+
+**https://172.17.4.12:35185**
+
+**username :MetzNumeric
+password : azer**
+
+J'ai rencontrer beacoup de probleme de dépence avec mon ordinateur j'ai trouver des solution pour certain et d'autres non vous pouvez voir dans le document deploy.MD

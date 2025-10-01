@@ -80,7 +80,7 @@ puis on va dans l'onget website et on crée un site en mettant l'ip du server
 **Puis c'est fini et on peut voir le site
 la db n'est pas affilier met pour crée une db on peut la crée sur appanel**
 ![1759308912524](image/DEPLOY/1759308912524.png)
-**password : bnffrwrSBcidRnH8
+****password : bnffrwrSBcidRnH8**
 
 ON peut ce rentre sur phmyadmin :
 ![1759311833980](image/DEPLOY/1759311833980.png)
@@ -132,3 +132,10 @@ et rentrer ces commande :
 **rm -rf vendor/ var/cache/*
 composer clear-cache
 composer install --no-dev --optimize-autoloader**
+
+
+
+**J'ai rencontrer beacoup d'erreur :**
+![1759317935108](image/DEPLOY/1759317935108.png)![1759320803725](image/DEPLOY/1759320803725.png)
+
+Que cela soit dans routes que j'ai modifier dans le fichier routes.json qui ce trouve dans le dossier config

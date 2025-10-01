@@ -1,5 +1,15 @@
 <?php $layout = 'admin/base.html.php'; ?>
+<?php
+require __DIR__ . '/bootstrap.php';
 
+if (empty($_SESSION['uid'])) {
+    header('Location: /login.php');
+    exit;
+}
+
+echo '<h1>Admin OK</h1>';?>
+
+//cela certifie que l'utilisateur est bien connecter avant d'acceder a la page 
 <div class="container py-5">
 
     <div class="row align-items-center">
